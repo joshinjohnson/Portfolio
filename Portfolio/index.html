@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Joshin Johnson</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link href="css/main.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	
+	
+	<!--Navigation bar starts-->
+	<nav class="navbar navbar-fixed-top navbar-default">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-xosh-navbar-collapse-1">
+					<span class="sr-only">Toggle</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#Home"><img id="brand-img" src="img/owl.png" alt="Brand"></a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="bs-xosh-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="nav-but-name"><a href="#Home">Joshin Johnson<span class="sr-only">(current)</span></a></li>
+					<li class="nav-but"><a href="#About">About Me</a></li>
+					<li class="nav-but"><a href="#Profile">Profile</a></li>
+					<li class="nav-but"><a href="#Resume">Resume</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li class="navbar-text">Contact Me</li>
+					<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+	<!--Navigation bar ends-->
+	
+	
+	<div class="container-fluid" id="home">
+		<div class="row">
+			<div class="section" id="section1">
+				<div id="bg" class="img-responsive">
+					<div id="bg-pattern">
+						<header class="main-text">
+							<h1>Joshin Johnson.</h1>
+							<hr width="30%">
+							<h2>Web Developer, Dreamer<span class="blinking-cursor">|</span></h2>
+						</header>
+					</div>
+				</div>
+			</div>
+
+			<div class="section" id="section2">
+				<div class="content-here">
+					<h1>Hey there!</h1>
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent iaculis interdum vulputate.
+					Praesent lacinia urna ut ipsum ullamcorper tristique. Mauris vel mi odio. In vestibulum molestie pulvinar. 
+					Vivamus tincidunt ipsum id augue tincidunt viverra.Proin cursus justo a varius efficitur. 
+					Sed ut mollis turpis. Mauris non rutrum sem. Ut at fringilla orci. 
+					Sed quis congue augue. Nunc nisl tellus, rutrum quis sagittis eget, ornare nec turpis.
+					Nam blandit erat vitae lectus tempus, eget placerat ipsum aliquet.Maecenas a diam ipsum.
+					Quisque facilisis, elit nec lobortis pulvinar, turpis nisi semper ex, vitae imperdiet erat tortor a lorem. 
+					Curabitur viverra condimentum convallis. Nam tincidunt risus eros, vel congue nulla accumsan et.
+					Etiam id lectus in libero lobortis mattis. Duis sit amet dignissim nisi.Interdum et malesuada fames ac ante ipsum primis in faucibus.
+					Curabitur eu lectus at elit fringilla facilisis faucibus eget tortor.
+					Ut tincidunt commodo neque at semper. Duis fringilla dapibus augue quis mattis. 
+					Ut interdum commodo faucibus. Etiam at pharetra sem. Etiam id metus vel metus porta tristique at ac urna.
+					</p>
+				</div>
+			</div>
+			
+			<div class="section" id="section3">
+			</div>
+			
+			<div class="section" id="section4">
+			</div>
+			
+		</div>
+	</div>
+	
+
+	<!-- JS Library Inclusion -->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#home').fullpage({
+				verticalCentered: false,
+				css3:false,
+				menu: '#menu',
+				anchors: ['Home', 'About', 'Profile', 'Resume'],
+				autoScrolling: false
+			});
+		});
+	</script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	
+</body>
+
+</html>
