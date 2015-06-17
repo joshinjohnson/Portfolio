@@ -157,8 +157,13 @@ hr {
 }
 .content-here{
 	padding: 5%;
-	float: left;
 }
-.content-here h1{
-	font-size: 50px;
+.about-content{
+	position: absolute;
+	height: 50%;
+	margin-left: 0px;
+	margin-right: 500px;
+}
+.about-content p{
+	padding: 5%;
 }
