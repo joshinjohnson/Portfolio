@@ -14,8 +14,7 @@
 </head>
 
 <body>
-	
-	
+
 	<!--Navigation bar starts-->
 	<nav class="navbar navbar-fixed-top navbar-default">
 		<div class="container-fluid">
@@ -26,7 +25,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#Home"><img id="brand-img" src="img/owl.png" alt="Brand"></a>
+				<a class="navbar-brand" href="#Home"><i class="fa fa-cog brand-img"></i></a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="bs-xosh-navbar-collapse-1">
@@ -38,8 +37,8 @@
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
 					<li class="navbar-text">Contact Me</li>
-					<li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li class="twitter"><a href="twitter.com/"><i class="fa fa-twitter"></i></a></li>
+					<li class="facebook"><a href="facebook.com/"><i class="fa fa-facebook"></i></a></li>
 				</ul>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
@@ -56,6 +55,10 @@
 							<h1>Joshin Johnson.</h1>
 							<hr width="30%">
 							<h2>Web Developer, Dreamer<span class="blinking-cursor">|</span></h2>
+							<!--<blockquote class="blockquote-reverse" style="font-size: 1.2em; margin-top: 10px;">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+								<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+							</blockquote>-->
 						</header>
 					</div>
 				</div>
@@ -76,6 +79,7 @@
 										Karunya University<br>
 										Karunya Nagar, Coimbatore.<br>
 								<abbr title="Phone">M:</abbr> (+91) 8056xxxxxx
+								<a href="resume.pdf" class="ResumeDown" download="joshinjohnson@gmail.com">Download Resume</a>
 							</address>
 							<address>
 								<strong>Joshin Johnson</strong><br>
@@ -88,7 +92,40 @@
 				</div>
 			</div>
 			
+			
 			<div class="section" id="section3">
+				<div class="overlay"></div>
+				<br><br><br><br><br><br><br>
+				<div class="headext">Skills Set</div><hr width="50%" class="skill-hr"><br><br><br><br>
+				<div class="skillbar clearfix " data-percent="40%">
+					<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+					<div class="skillbar-bar" style="background: #e67e22;"></div>
+					<div class="skill-bar-percent">40%</div>
+				</div> <!-- End Skill Bar -->
+
+				<div class="skillbar clearfix " data-percent="45%">
+					<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+					<div class="skillbar-bar" style="background: #3498db;"></div>
+					<div class="skill-bar-percent">45%</div>
+				</div> <!-- End Skill Bar -->
+
+				<div class="skillbar clearfix " data-percent="80%">
+					<div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+					<div class="skillbar-bar" style="background: #5a68a5;"></div>
+					<div class="skill-bar-percent">80%</div>
+				</div> <!-- End Skill Bar -->
+
+				<div class="skillbar clearfix " data-percent="60%">
+					<div class="skillbar-title" style="background: #2c3e50;"><span>JAVA</span></div>
+					<div class="skillbar-bar" style="background: #2c3e50;"></div>
+					<div class="skill-bar-percent">60%</div>
+				</div> <!-- End Skill Bar -->
+
+				<div class="skillbar clearfix " data-percent="70%">
+					<div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
+					<div class="skillbar-bar" style="background: #4288d0;"></div>
+					<div class="skill-bar-percent">70%</div>
+				</div> <!-- End Skill Bar -->			
 			</div>
 			
 			<div class="section" id="section4">
@@ -112,9 +149,15 @@
 				anchors: ['Home', 'About', 'Profile', 'Resume'],
 				autoScrolling: false
 			});
+			jQuery('.skillbar').each(function(){
+				jQuery(this).find('.skillbar-bar').animate({
+					width:jQuery(this).attr('data-percent')
+				},6000);
+			});
 		});
 	</script>
 	<script type="text/javascript" src="js/custom.js"></script>
+	<script src="js/skillset.js"></script>
 	
 </body>
 
