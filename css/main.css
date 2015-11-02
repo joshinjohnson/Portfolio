@@ -12,7 +12,7 @@ body{
 .navbar-nav{
 	margin-left: 20px;
 }
-li.twitter a{
+li.linkedin a{
 	font-size: 2em;
 	height: 50px;
 	width: 50px;
@@ -25,12 +25,12 @@ li.facebook a{
 	font-size: 2em;
 	height: 50px;
 	width: 50px;
-	background-color: #3b5998 !important;
+	background-color: #0077B5 !important;
 	color: #fff !important;
 	text-align: center;
 }
 
-.nav-but,li.facebook a:hover,li.twitter a:hover,.navbar-brand:hover{
+.nav-but,li.facebook a:hover,li.linkedin a:hover,.navbar-brand:hover{
 	opacity: 0.8;
 }
 @media (max-width: 768px){
@@ -302,5 +302,13 @@ hr {
 .ResumeDown:active {
 	position:relative;
 	top:1px;
+}
+.about-dp{
+	width: 250px;
+    height: 250px;
+}
+.img-thumbnail{
+	width: 100%;
+    height: auto;
 }
 /*Resume button ends*/
