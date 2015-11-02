@@ -1,0 +1,306 @@
+body{
+	font-family: 'PT Sans', sans-serif;
+}
+.brand-img{
+	color: #fff;
+	font-size: 3em;
+}
+.navbar-brand{
+	padding: 0;
+}
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand,
+.navbar-nav{
+	margin-left: 20px;
+}
+li.twitter a{
+	font-size: 2em;
+	height: 50px;
+	width: 50px;
+	background-color: #0084b4 !important;
+	color: #fff !important;
+	text-align: center;
+}
+li.facebook a{
+	margin-right: 4px;
+	font-size: 2em;
+	height: 50px;
+	width: 50px;
+	background-color: #3b5998 !important;
+	color: #fff !important;
+	text-align: center;
+}
+
+.nav-but,li.facebook a:hover,li.twitter a:hover,.navbar-brand:hover{
+	opacity: 0.8;
+}
+@media (max-width: 768px){
+	.navbar-default .navbar-nav>li>a,.navbar-default .navbar-text{
+		width: 100%;
+		text-align: center;
+	}
+}
+.navbar-default{
+	background-color : transparent;
+	border-bottom: none;
+	margin-bottom: 0;
+}
+#bg{
+	position: fixed;
+	top: 0; 
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	background-image: url('../img/newjumbo.png');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#bg-pattern{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-image: url("../img/bg-pattern.png");
+	background-repeat: repeat;
+}
+.container-fluid{
+	padding-left: 0;
+}
+.section{
+	text-align:center;
+	background-size: cover;
+	background-position: fixed;
+}
+#section1{
+	background-attachment: fixed;
+}
+#section2{
+	max-height: 550px;
+	background-color: #FFF295;
+	margin-bottom: 0;
+}
+#section3{
+	background-attachment: fixed;
+	background-image: url('../img/jumbo.png');
+	
+}
+#section4{
+	background-color: #99FFCC;
+}
+.navbar-default .navbar-nav > li > a, .navbar-default .navbar-text{
+	color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover{
+	background-color: rgba(0,0,0,0.8);
+}
+.main-text{
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #fff;
+	text-align: center;
+}
+.main-text h1{
+	margin-top: 20%;
+	margin-bottom: 0;
+	font-size: 50px;
+}
+.main-text h2{
+	margin-top: 0;
+	font-size: 55px;
+	font-weight: bolder;
+}
+.blinking-cursor {
+  color: #2E3D48;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+@keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: #fff;
+  }
+}
+@-moz-keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+@-webkit-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+@-ms-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+@-o-keyframes "blink" {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
+}
+hr {
+	border: 0;
+	height: 1px;
+	background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+.content-here{
+	padding: 5%;
+}
+.about-content{
+	position: absolute;
+	height: 50%;
+	margin-left: 0px;
+	margin-right: 500px;
+}
+.about-content p{
+	padding: 5%;
+}
+/*Skill bar starts*/
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:20px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+/*Skill bar ends*/
+.headext{
+	color: #fff;
+	font-size: 4em;
+}
+.overlay{
+	opacity: .6;
+    background-color: black;
+    position: absolute;
+    left: 0; top: 0; height: 100%; width: 100%;
+}
+.headext,.skill-hr{
+	position: relative;
+}
+/*Resume button starts*/
+.ResumeDown {
+	float: right !important;
+	margin-right: 5%;
+	-moz-box-shadow: 0px 2px 0px 0px #1c1b18;
+	-webkit-box-shadow: 0px 2px 0px 0px #1c1b18;
+	box-shadow: 0px 2px 0px 0px #1c1b18;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #eae0c2), color-stop(1, #ccc2a6));
+	background:-moz-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-webkit-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-o-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:-ms-linear-gradient(top, #eae0c2 5%, #ccc2a6 100%);
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#eae0c2', endColorstr='#ccc2a6',GradientType=0);
+	background-color:#eae0c2;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	display:inline-block;
+	cursor:pointer;
+	color:#515c2d;
+	font-size:15px;
+	font-weight:light;
+	padding:10px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.ResumeDown:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ccc2a6), color-stop(1, #eae0c2));
+	background:-moz-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-webkit-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-o-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:-ms-linear-gradient(top, #ccc2a6 5%, #eae0c2 100%);
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccc2a6', endColorstr='#eae0c2',GradientType=0);
+	background-color:#ccc2a6;
+}
+.ResumeDown:active {
+	position:relative;
+	top:1px;
+}
+/*Resume button ends*/
